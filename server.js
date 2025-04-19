@@ -8,7 +8,7 @@ app.use(cors());
 const PORT = 3000;
 
 
-mongoose.connect('mongodb://localhost:27017/myDatabase')
+mongoose.connect('mongodb+srv://nareshsuthardev:naresh@cluster0.nszkz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(console.log("Db Connected"))
 .catch(err=>console.log("Error while connecting DB",err));
 
